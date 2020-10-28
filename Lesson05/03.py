@@ -3,7 +3,7 @@
 
 import codecs
 print(f'Зарплата меньше 20000 руб.:')
-with codecs.open('List03-personal.txt', 'r', 'utf-8') as f:
+with codecs.open('03_list.txt', 'r', 'utf-8') as f:
     workers = {}
     for line in f:
         key, value = line.split()
@@ -16,7 +16,7 @@ with codecs.open('List03-personal.txt', 'r', 'utf-8') as f:
 summa = 0
 count = 0
 persons = []
-with codecs.open('List03-personal.txt', 'r', 'utf-8') as file_obj:
+with codecs.open('03_list.txt', 'r', 'utf-8') as file_obj:
     for line in file_obj:
         tokens = line.split(' ')
         if int(tokens[1]) <= 200:
